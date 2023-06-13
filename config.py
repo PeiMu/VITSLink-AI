@@ -1,6 +1,6 @@
 ####- CONFIG -####
-api_key = "INPUT API KEY HERE" #Add API KEY
-PTT_BUTTON = "\\" #Change to the key you want to hit
+api_key = "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" #Add API KEY
+PTT_BUTTON = " " #Change to the key you want to hit
 wmodel = "base" #Change whisper model
 tts_model = "tts-Kyaru" #change vits-tts model
 #language = "insert language here" (currently hardcoded to japanese only until I do more testing)

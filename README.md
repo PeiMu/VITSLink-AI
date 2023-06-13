@@ -5,13 +5,32 @@ This project utilizes ChatGPT API and whisper to provide English text to Japanes
 English Voice input -> English Text (whisper) -> Japanese text translation (OpenAI API) -> Japanese Voice (VITS)  
 
 ## Install
-setup.bat
-paste the OpenAI API key into the config.py file
+1. create conda environment
+```bash
+conda create -n vitslink python=3 
+conda activate vitslink
+```
+
+2. run `setup.sh`
+```bash
+bash ./setup.sh
+```
+
+3. paste the OpenAI API key into the config.py file
 
 ## How to run
-Just run "run.bat" file
-or run vits "python app.py --api" and the Language Link "english_to_japanese_vits.py" 
+Just run "run.sh" file or run vits "python app.py --api" and the Language Link "english_to_japanese_vits.py"
 
+### *Attention*
+1. Conda environment cannot install pyopenjtalk
+2. There might be an error - `_pickle.UnpicklingError: invalid load key, ''.`
+Fix by https://stackoverflow.com/questions/33049688/what-causes-the-error-pickle-unpicklingerror-invalid-load-key
+```bash
+ sudo apt-get install git-lfs
+ git lfs install
+ git clone ...
+```
+3. need to run with `sudo`
 
 
 ## Requirements
